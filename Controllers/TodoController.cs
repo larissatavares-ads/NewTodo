@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using NewTodo.Models;
 
 namespace NewTodo.Controllers;
 
@@ -6,5 +7,8 @@ namespace NewTodo.Controllers;
 [Route("v1")]
 public class TodoController : ControllerBase
 {
-    
+    public List<Todo> Get()
+    {
+        return new List<Todo>();
+    }
 }
